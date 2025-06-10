@@ -17,8 +17,8 @@ const Display = ({ partido }) => {
           </tr>
           <tr>
             <th scope="row">🟨</th>
-            <td>0</td>
-            <td>0</td>
+            <td>{partido.targeta_AmarillaLocal}</td>
+            <td>{partido.targeta_AmarillaVisitante}</td>
           </tr>
           <tr>
             <th scope="row">🟥</th>
