@@ -22,8 +22,8 @@ const Display = ({ partido }) => {
           </tr>
           <tr>
             <th scope="row">🟥</th>
-            <td>0</td>
-            <td>0</td>
+            <td>{partido.targeta_RojaLocal}</td>
+            <td>{partido.targeta_RojaVisitante}</td>
           </tr>
         </tbody>
       </table>
