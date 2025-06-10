@@ -37,11 +37,15 @@ const onTargetaR = (equipo) => {
         setPartido({...partido,targeta_RojaVisitante: partido.targeta_RojaVisitante + 1})
       }
   }
+  const reset = () => {
+    setPartido({ ...partido, golesLocal: 0, ...partido, golesVisitante: 0, partido, targeta_AmarillaLocal: 0, targeta_AmarillaVisitante: 0 })
+    
+  }
 
   return (
     <div className='container'>
       <h1>Partido</h1>
-      <Controles onGol={onGol} onTargetaA={onTargetaA} onTargetaR={onTargetaR}/>
+      <Controles onGol={onGol} onTargetaA={onTargetaA} onTargetaR={onTargetaR} reset={reset}/>
       <Display partido={partido} />
     </div>
   )
