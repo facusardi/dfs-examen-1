@@ -1,4 +1,4 @@
-const Controles = ({ onGol }) => {
+const Controles = ({ onGol}) => {
   return (
     <div className="controles">
       <div>
